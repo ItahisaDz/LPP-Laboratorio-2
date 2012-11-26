@@ -5,7 +5,7 @@ throws = defeat.keys
     
 player_throws = (ARGV.shift || '').to_sym
       
-raise SystaxError, " Jugada incorrecta, debes elegir : '#{opcions.join(', ')}'" unless throws.include? player_throws
+raise SystaxError, " Jugada incorrecta, debes elegir : '#{throws.join(', ')}'" unless throws.include? player_throws
       
 computer_throws = throws.sample
       
